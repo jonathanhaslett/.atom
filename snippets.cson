@@ -16,6 +16,10 @@
 # This file uses CoffeeScript Object Notation (CSON).
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
+
+#
+# MQ snippets
+#
 '.source.css.scss':
   'Tweakpoints':
     'prefix': 'Tweakpoints'
@@ -27,39 +31,116 @@
   'Small MQ':
     'prefix': 'Small MQ'
     'body': '''
-    ///////////////
-    ///  SMALL  ///
-    ///////////////
+    //
+    // SMALL
+    //
     @include breakpoint("small") {
     	$1
     }
-    ///////////////
-    ///END SMALL///
-    ///////////////
+    '''
+  'Small Only MQ':
+    'prefix': 'Small Only MQ'
+    'body': '''
+    //
+    // SMALL ONLY
+    //
+    @include breakpoint("small_only") {
+    	$1
+    }
+    '''
+  'Small JS MQ':
+    'prefix': 'Small JS MQ'
+    'body': '''
+    //
+    // SMALL JS
+    //
+    @include breakpoint("small", true) {
+    	$1
+    }
     '''
   'Medium MQ':
     'prefix': 'Medium MQ'
     'body': '''
-    //////////////////
-    //    MEDIUM    //
-    //////////////////
+    //
+    // MEDIUM
+    //
     @include breakpoint("medium") {
     	$1
     }
-    //////////////////
-    //  END MEDIUM  //
-    //////////////////
+    '''
+  'Medium Only MQ':
+    'prefix': 'Medium Only MQ'
+    'body': '''
+    //
+    // MEDIUM ONLY
+    //
+    @include breakpoint("medium_only") {
+    	$1
+    }
+    '''
+  'Medium JS MQ':
+    'prefix': 'Medium JS MQ'
+    'body': '''
+    //
+    // MEDIUM JS
+    //
+    @include breakpoint("medium", true) {
+    	$1
+    }
     '''
   'Large MQ':
     'prefix': 'Large MQ'
     'body': '''
-    //////////////////
-    //    LARGE     //
-    //////////////////
+    //
+    // LARGE
+    //
     @include breakpoint("large") {
     	$1
     }
-    //////////////////
-    //   END LARGE  //
-    //////////////////
     '''
+  'Large JS MQ':
+    'prefix': 'Large JS MQ'
+    'body': '''
+    //
+    // LARGE JS
+    //
+    @include breakpoint("large", true) {
+    	$1
+    }
+    '''
+  'Custom MQ':
+    'prefix': 'Custom MQ'
+    'body': '''
+    //
+    // ${1:custom_mq}
+    //
+    @include breakpoint("${1:custom_mq}") {
+    	$2
+    }
+    '''
+  #Base-Base mixins
+  'Base-Base':
+    'prefix': 'Bb'
+    'body': '@include base-base(${1:\\$font-size}, ${2:\\$dff}, ${3:\\$trailing-white-space}, ${4:\\$leading-white-space});'
+  'Margin Leader':
+    'prefix': 'Mt'
+    'body': '@include margin-leader(${1:1}, ${2:\\$current-font-size});'
+  'Margin Trailer':
+    'prefix': 'Mb'
+    'body': '@include margin-trailer(${1:1}, ${2:\\$current-font-size});'
+  'Padding Leader':
+    'prefix': 'Pt'
+    'body': '@include padding-leader(${1:1}, ${2:\\$current-font-size});'
+  'Padding Trailer':
+    'prefix': 'Pb'
+    'body': '@include padding-trailer(${1:1}, ${2:\\$current-font-size});'
+  'Neutralise':
+    'prefix': 'Neu'
+    'body': '@include neutralise();'
+  'Lines for font size':
+    'prefix': 'Lfz'
+    'body': '@include lines-for-font-size(${1:\\$font-size}, ${2:\\$lh});'
+  #Debug
+  'Debug Grid':
+    'prefix': 'Debug baseline'
+    'body': '@include debug_baseline();'
