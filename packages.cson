@@ -1,0 +1,16 @@
+packages: [
+  "atom-beautify"
+  "autoclose-html"
+  "emmet"
+  "emmet-snippets-compatibility"
+  "highlight-selected"
+  "linter"
+  "linter-jshint"
+  "minimap"
+  "minimap-highlight-selected"
+  "modx-revolution"
+  "package-sync"
+  "pigments"
+  "project-manager"
+  "todo-show"
+]
