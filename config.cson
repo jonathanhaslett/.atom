@@ -1,0 +1,46 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "5f123b70-dc85-4b65-b273-e54ef81cd399"
+    html:
+      indent_size: 2
+    scss:
+      align_assignments: true
+      indent_size: 2
+      predefinedConfig: "zen"
+      preserve_newlines: true
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    disabledPackages: [
+      "wrap-guide"
+      "emmet-snippets-compatibility"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-dark-ui"
+      "one-dark-syntax"
+    ]
+  editor:
+    fontFamily: "Hack"
+    fontSize: 16
+    showIndentGuide: true
+    softWrap: true
+  emmet:
+    extensionsPath: "~/DashMedia Gits/emmet-compass/git"
+  "exception-reporting":
+    userId: "90240a48-4298-3024-99ca-5e0a4e9b4279"
+  linter:
+    showErrorPanel: false
+  minimap:
+    moveCursorOnMinimapClick: true
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+    scrollAnimation: true
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
