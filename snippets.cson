@@ -144,3 +144,17 @@
   'Debug Grid':
     'prefix': 'Debug baseline'
     'body': '@include debug_baseline();'
+  #Modernizr
+  'Modernizr Yep':
+    'prefix': 'Yep'
+    'body': '@include yep(${1:rgba}) {$2};'
+  'Modernizr Nope':
+    'prefix': 'Nope'
+    'body': '@include nope(${1:rgba}) {$2};'
+  #Bourbon neat
+  'Bourbon: Columns':
+    'prefix': 'columns'
+    'body': 'flex-grid(${1:1})'
+  'Bourbon: Gutter':
+    'prefix': 'gutter'
+    'body': 'flex-gutter(${1:12})'
