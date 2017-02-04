@@ -9,6 +9,7 @@ packages: [
   "minimap"
   "minimap-highlight-selected"
   "modx-revolution"
+  "on-the-rocks"
   "package-sync"
   "pigments"
   "project-manager"
