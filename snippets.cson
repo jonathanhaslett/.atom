@@ -17,10 +17,16 @@
 # If you are unfamiliar with CSON, you can read more about it here:
 # https://github.com/bevry/cson#what-is-cson
 
-#
-# MQ snippets
-#
 '.source.css.scss':
+  # General box comment
+  'Comment block':
+    'prefix': 'cb'
+    'body': '''
+    //
+    // ${1:Label}
+    //
+    '''
+  # MQ snippets
   'Tweakpoints':
     'prefix': 'Tweakpoints'
     'body': '''
