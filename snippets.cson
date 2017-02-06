@@ -146,6 +146,9 @@
   'Lines for font size':
     'prefix': 'Lfz'
     'body': '@include lines-for-font-size(${1:\\$font-size}, ${2:\\$lh});'
+  'Pixels to baseline':
+    'prefix': 'p2b'
+    'body': 'p2b(${1:0}px)'
   #Debug
   'Debug Grid':
     'prefix': 'Debug baseline'
@@ -160,7 +163,7 @@
   #Bourbon neat
   'Bourbon: Columns':
     'prefix': 'columns'
-    'body': 'flex-grid(${1:1})'
+    'body': 'flex-grid(${1:1}, ${2:12})'
   'Bourbon: Gutter':
     'prefix': 'gutter'
     'body': 'flex-gutter(${1:12})'

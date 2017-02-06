@@ -22,8 +22,16 @@ atom-text-editor .syntax--scss.syntax--square{
   color: #c678dd;
 }
 
-.syntax--entity.syntax--other.syntax--attribute-name.syntax--pseudo-element{
-  color: #61afef;
+.syntax--entity.syntax--other.syntax--attribute-name{
+  &.syntax--pseudo-class{
+    color: mix(black,@ui-site-color-5,10%);
+  }
+  &.syntax--pseudo-element{
+    color: #61afef;
+  }
+  &.syntax--placeholder{
+    color: #e06c75;
+  }
 }
 // To style other content in the text editor's shadow DOM, use the ::shadow
 // expression
