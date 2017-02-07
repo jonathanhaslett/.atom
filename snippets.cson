@@ -28,6 +28,70 @@
   'Position - Static':
     'prefix': 'poss'
     'body': 'position: static;'
+  'Font Style - Italic':
+    'prefix': 'fsi'
+    'body': 'font-style: italic;'
+  'Font Style - Normal':
+    'prefix': 'fsn'
+    'body': 'font-style: normal;'
+  'Font Family':
+    'prefix': 'ff'
+    'body': 'font-family: ${1:\'icons\'};'
+  'Text Align - Center':
+    'prefix': 'tac'
+    'body': 'text-align: ${1:center};'
+  'Text Decoration - None':
+    'prefix': 'tdn'
+    'body': 'text-decoration: ${1:none};'
+  'Text Transform - Uppercase':
+    'prefix': 'ttu'
+    'body': 'text-transform: ${1:uppercase};'
+  'Margin Top':
+    'prefix': 'mt'
+    'body': 'margin-top: ${1:0};'
+  'Margin Right':
+    'prefix': 'mr'
+    'body': 'margin-right: ${1:0};'
+  'Margin Bottom':
+    'prefix': 'mb'
+    'body': 'margin-bottom: ${1:0};'
+  'Margin Left':
+    'prefix': 'ml'
+    'body': 'margin-left: ${1:0};'
+  'Padding Top':
+    'prefix': 'pt'
+    'body': 'padding-top: ${1:0};'
+  'Padding Right':
+    'prefix': 'pr'
+    'body': 'padding-right: ${1:0};'
+  'Padding Bottom':
+    'prefix': 'pb'
+    'body': 'padding-bottom: ${1:0};'
+  'Padding Left':
+    'prefix': 'pl'
+    'body': 'padding-left: ${1:0};'
+  'Width':
+    'prefix': 'w'
+    'body': 'width: ${1:100%};'
+  'Height':
+    'prefix': 'h'
+    'body': 'height: ${1:100%};'
+  'Top':
+    'prefix': 't'
+    'body': 'top: ${1:0};'
+  'Right':
+    'prefix': 'r'
+    'body': 'right: ${1:0};'
+  'Bottom':
+    'prefix': 'b'
+    'body': 'bottom: ${1:0};'
+  'Left':
+    'prefix': 'l'
+    'body': 'left: ${1:0};'
+  'Display: Block':
+    'prefix': 'dis'
+    'body': 'display: ${1:block};'
+
 
 '.source.css.scss':
   # General box comment
@@ -173,6 +237,12 @@
     'prefix': 'Nope'
     'body': '@include nope(${1:rgba}) {$2};'
   #Bourbon neat
+  'Bourbon: Span Columns':
+    'prefix': 'span-columns'
+    'body': '@include span-columns(${1:1} of ${2:12});'
+  'Bourbon: Clearfix':
+    'prefix': 'cf'
+    'body': '@include clearfix;'
   'Bourbon: Columns':
     'prefix': 'columns'
     'body': 'flex-grid(${1:1}, ${2:12})'
