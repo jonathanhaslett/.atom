@@ -227,7 +227,7 @@
     'body': 'p2b(${1:0}px)'
   #Debug
   'Debug Grid':
-    'prefix': 'Debug baseline'
+    'prefix': 'dva'
     'body': '@include debug_baseline();'
   #Modernizr
   'Modernizr Yep':
