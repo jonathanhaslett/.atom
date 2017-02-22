@@ -39,13 +39,13 @@
     'body': 'font-family: ${1:\'icons\'};'
   'Text Align - Center':
     'prefix': 'tac'
-    'body': 'text-align: ${1:center};'
+    'body': 'text-align: center;'
   'Text Decoration - None':
     'prefix': 'tdn'
-    'body': 'text-decoration: ${1:none};'
+    'body': 'text-decoration: none;'
   'Text Transform - Uppercase':
     'prefix': 'ttu'
-    'body': 'text-transform: ${1:uppercase};'
+    'body': 'text-transform: uppercase;'
   'Margin Top':
     'prefix': 'mt'
     'body': 'margin-top: ${1:0};'
@@ -90,7 +90,13 @@
     'body': 'left: ${1:0};'
   'Display: Block':
     'prefix': 'dis'
-    'body': 'display: ${1:block};'
+    'body': 'display: block;'
+  'Float: Left':
+    'prefix': 'fll'
+    'body': 'float: left;'
+  'Float: Right':
+    'prefix': 'flr'
+    'body': 'float: right;'
 
 
 '.source.css.scss':
@@ -102,6 +108,13 @@
     // ${1:Label}
     //
     '''
+  # Dashing
+  'Wave fix - round buttons':
+    'prefix': 'wave-fix'
+    'body': '@include wave-fix();'
+  'Z Depth Shadow':
+    'prefix': 'zdepth'
+    'body': '@include z-depth(${1:1});'
   # MQ snippets
   'Tweakpoints':
     'prefix': 'Tweakpoints'
