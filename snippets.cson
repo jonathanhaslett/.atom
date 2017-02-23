@@ -117,7 +117,7 @@
     'body': '@include z-depth(${1:1});'
   'Object Fit':
     'prefix': 'objf'
-    'body': '@include object-fit(${1:fill}, ${2:center})'
+    'body': '@include object-fit(${1:fill}, ${2:center});'
   # MQ snippets
   'Tweakpoints':
     'prefix': 'Tweakpoints'
