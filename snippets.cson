@@ -206,6 +206,16 @@
     	$1
     }
     '''
+  'Oversie MQ':
+    'prefix': 'Oversie MQ'
+    'body': '''
+    //
+    // OVERSIZE
+    //
+    @include breakpoint("oversize") {
+    	$1
+    }
+    '''
   'Custom MQ':
     'prefix': 'Custom MQ'
     'body': '''
