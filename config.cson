@@ -17,13 +17,9 @@
       "emmet-snippets-compatibility"
     ]
     telemetryConsent: "limited"
-    themes: [
-      "one-dark-ui"
-      "one-dark-syntax"
-    ]
   editor:
     fontFamily: "Hack"
-    fontSize: 15
+    fontSize: 16
     showIndentGuide: true
     softWrap: true
   emmet: {}
@@ -37,6 +33,8 @@
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
     scrollAnimation: true
+  "one-dark-ui":
+    fontSize: 14
   "package-sync":
     createOnChange: true
     forceOverwrite: true
