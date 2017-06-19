@@ -19,7 +19,7 @@
     telemetryConsent: "limited"
   editor:
     fontFamily: "Hack"
-    fontSize: 16
+    fontSize: 17
     showIndentGuide: true
     softWrap: true
   emmet: {}
@@ -27,6 +27,8 @@
     userId: "90240a48-4298-3024-99ca-5e0a4e9b4279"
   linter:
     showErrorPanel: false
+  "linter-ui-default":
+    showPanel: true
   minimap:
     moveCursorOnMinimapClick: true
     plugins:
